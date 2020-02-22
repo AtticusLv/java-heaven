@@ -22,6 +22,10 @@
 - [CAS](#cas)
 - [Guava缓存原理](#guava缓存原理)
 - [JVM知识点](#jvm知识点)
+- [Http2和Http3](#http2和http3)
+- [什么是socket](#什么是socket)
+- [限流算法](#限流算法)
+- [动态代理和静态代理](#动态代理和静态代理)
 
 <!-- /TOC -->
 # 临时文档
@@ -87,3 +91,15 @@ CompareAndSwap： 比较并替换
 
 # JVM知识点
 [JVM知识点](https://blog.csdn.net/qq_35462834/article/details/81940222)
+
+# Http2和Http3
+https://blog.csdn.net/howgod/article/details/102597450
+
+# 什么是socket
+https://www.jianshu.com/p/066d99da7cbd
+
+# 限流算法
+令牌桶算法
+
+# 动态代理和静态代理
+https://blog.csdn.net/fox_bert/article/details/80891148

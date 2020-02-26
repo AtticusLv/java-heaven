@@ -26,6 +26,13 @@
 - [什么是socket](#什么是socket)
 - [限流算法](#限流算法)
 - [动态代理和静态代理](#动态代理和静态代理)
+- [分布式系统中事务如何处理](#分布式系统中事务如何处理)
+- [MySQL如何支持事务的](#mysql如何支持事务的)
+- [跨域请求](#跨域请求)
+- [Servlet](#servlet)
+- [分布式Session](#分布式session)
+- [Zookeeper](#zookeeper)
+- [分布式锁](#分布式锁)
 
 <!-- /TOC -->
 # 临时文档
@@ -103,3 +110,47 @@ https://www.jianshu.com/p/066d99da7cbd
 
 # 动态代理和静态代理
 https://blog.csdn.net/fox_bert/article/details/80891148
+
+# 分布式系统中事务如何处理
+
+# MySQL如何支持事务的
+
+# 跨域请求
+https://javadoop.com/post/cross-domain
+
+# Servlet
+1、客户端发起请求
+2、服务器接收请求，发送到Servlet容器
+3、Servlet容器检测是否实例化Servlet，交给Servlet实例
+4、Servlet调用init方法
+5、Servlet调用service方法，根据GET、POST不同请求来处理，调用doXXX()方法
+6、Servlet返回相应内容给容器，容器返回给客户端
+7、容器关闭时调用Servlet的destroy()方法
+```
+public interface Servlet {
+    public void init(ServletConfig config) throws ServletException;
+
+    public void service(ServletRequest req, ServletResponse res)
+	throws ServletException, IOException;
+
+    public void destroy();
+
+    public ServletConfig getServletConfig();
+
+    public String getServletInfo();
+}
+```
+# 分布式Session
+Redis
+
+
+# Zookeeper
+[Zookeeper](https://juejin.im/post/5b037d5c518825426e024473)
+
+数据结构：树
+
+集群：一主多从
+
+ZAB协议
+
+# 分布式锁
